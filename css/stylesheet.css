@@ -316,3 +316,52 @@ input[name=question]:checked + label + .response{
     font-weight: 500;
 
 }
+
+.nfts-examples {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.nfts-examples > img{
+    width: 80%;
+    height: 80%;
+}
+
+.brand-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.brand-images:last-child{
+    grid-column:2/span 1;
+}
+.brand-child>a>img{
+    margin: 20px;
+    width: 90%;
+    height: 70%;
+    border: black 5px solid;
+}
+.brand-child>a>img:hover{
+
+    border: red 5px solid;
+}
+.brand-child{
+    text-align: center;
+}
+/*
+ <div class="col-3">
+                <h1>Popular NFT Marketplaces</h1>
+                <a href="https://crypto.com/nft/" target="_blank"><p>Crypto.com</p></a>
+                <a href="https://opensea.io/" target="_blank"><p>OpenSea</p></a>
+                <a href="https://rarible.com/" target="_blank"><p>Rarible</p></a>
+                <a href="https://niftygateway.com/" target="_blank"><p>Nifty Gateway</p></a>
+                <a href="https://foundation.app/" target="_blank"><p>Foundation</p></a>
+                <a href="https://nbatopshot.com/" target="_blank"><p>NBA Topshot</p></a>
+                <a href="https://superrare.com" target="_blank"><p>SuperRare</p></a>
+                <a href="https://myth.market" target="_blank"><p>Myth Market</p></a>
+                <a href="https://marketplace.draftkings.com" target="_blank"><p>DraftKings Marketplace</p></a>
+                <a href="https://www.binance.com/en/nft/home" target="_blank"><p>Binance NFT</p></a>
+            </div>
+*/
