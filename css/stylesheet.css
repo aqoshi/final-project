@@ -25,6 +25,7 @@ h1{
     z-index: 1;
     overflow: hidden;
 }
+
 title{
     size: 40px;
 }
@@ -51,6 +52,7 @@ a.skip-to-content-link {
     z-index: 999;
     padding: 1em;
     color: white;
+    background-color: black;
     opacity: 0;
   }
 a.skip-to-content-link:focus, a.skip-to-content-link:active{
@@ -66,18 +68,20 @@ li:hover
 
 .logo{
     display: block;
-    margin-left: auto;
     margin-right: auto;
-    width: 30%;
-
+    margin-left: auto;
+    background: #CD17D3;
 }
 
+
 nav ul{
+    background-color: #CD17D3;
     flex: 1;
     text-align: center;
 }
 
 nav ul li{
+    background-color: #CD17D3;
     display: inline-block;
     list-style: none;
     margin: 0 15px;
