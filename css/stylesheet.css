@@ -229,7 +229,6 @@ input[name=question]:checked + label + .response{
 
 .col-2 p{
     margin: 10px 0 30px;
-    max-width: 580px;
 }
 
 .col-2 a{
@@ -252,7 +251,6 @@ input[name=question]:checked + label + .response{
 
     font-size: 20px;
     margin: 10px 0 30px;
-    max-width: 580px;
 }
 
 .col-3 a{
