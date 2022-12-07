@@ -4,6 +4,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h1{
+    margin: 20px 0 0;
+    text-align: justify;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
 .hero{
     width: 100%;
     min-height: 100vh;
@@ -53,7 +62,11 @@ li:hover
 }
 
 .logo{
-    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
 }
 
 nav ul{
@@ -93,33 +106,8 @@ a{
     position: relative;
 }
 
-.col-2{
-    flex-basis: 55%;
-    min-width: 300px;
-    margin-bottom: 30px;
-}
-
 .col-1 img{
     width: 100%;
-}
-
-.col-2 h1{
-    font-size: 62px;
-    font-weight: 600;
-}
-
-.col-2 p{
-    margin: 10px 0 30px;
-    max-width: 580px;
-}
-
-.col-2 .btn{
-    margin-left: 0;
-    margin-right: 30px;
-    background: #fff;
-    color: #CD17D3;
-    font-weight: 500;
-
 }
 
 .elements{
@@ -227,13 +215,18 @@ input[name=question]:checked + label + .response{
     opacity: 1 !important;
 }
 
-.col-2 .btn{
+.col-2 .btn, .col-3 .btn, .col-4 .btn, .col-5 .btn{
     margin-left: 0;
     margin-right: 30px;
     background: #fff;
     color: #CD17D3;
     font-weight: 500;
 
+}
+
+.col-2 p{
+    margin: 10px 0 30px;
+    max-width: 580px;
 }
 
 .col-2 a{
@@ -246,34 +239,17 @@ input[name=question]:checked + label + .response{
     color: red;
   }
 
-.col-3{
+.col-2, .col-3, .col-4, .col-5 {
     flex-basis: 55%;
     min-width: 300px;
     margin-bottom: 30px;
 }
 
-
-.col-3 h1{
-    margin: 20px 0 0;
-    text-align: justify;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.col-3 p{
+.col-3 p, .col-4 p, .col-5 p{
 
     font-size: 20px;
     margin: 10px 0 30px;
     max-width: 580px;
-}
-
-.col-3 .btn{
-    margin-left: 0;
-    margin-right: 30px;
-    background: #fff;
-    color: #CD17D3;
-    font-weight: 500;
-
 }
 
 .col-3 a{
@@ -284,66 +260,8 @@ input[name=question]:checked + label + .response{
     color: pink;
   }
 
-.col-4{
-    flex-basis: 55%;
-    min-width: 300px;
-    margin-bottom: 30px;
-}
-
-.col-4 h1{
-    margin: 20px 0 0;
-    text-align: justify;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.col-4 p{
-
-    font-size: 20px;
-    margin: 10px 0 30px;
-    max-width: 1000px;
-}
-
 .col-4 img{
     width: 30%;
-}
-
-.col-4 .btn{
-    margin-left: 0;
-    margin-right: 30px;
-    background: #fff;
-    color: #CD17D3;
-    font-weight: 500;
-
-}
-
-.col-5{
-    flex-basis: 55%;
-    min-width: 300px;
-    margin-bottom: 30px;
-}
-
-.col-5 h1{
-    margin: 20px 0 0;
-    text-align: justify;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.col-5 p{
-
-    font-size: 20px;
-    margin: 10px 0 30px;
-    max-width: 580px;
-}
-
-.col-5 .btn{
-    margin-left: 0;
-    margin-right: 30px;
-    background: #fff;
-    color: #CD17D3;
-    font-weight: 500;
-
 }
 
 .nfts-examples {
@@ -379,10 +297,6 @@ input[name=question]:checked + label + .response{
     box-shadow: inset 0 0 14px black;
     font-size: 1.2em;
 }
-h1{
-    text-align: center;
-    width: 100%;
-}
 
 .personal{
     display: flex;
@@ -395,9 +309,7 @@ h1{
 @media only screen and (min-width: 700px)
 {
     .nfts-examples {
-        display: flex;
         justify-content: space-evenly;
-        align-content: center;
         flex-wrap: wrap;
         flex-direction: row;
     }
@@ -407,21 +319,7 @@ h1{
     }
 
     .brand-images{
-        display: grid;
-        justify-items: center;
         grid-template-columns: 1fr 1fr 1fr;
-    }
-    .brand-child{
-        text-align: center;
-    }
-    .brand-child>a>img{
-        margin: 20px;
-        width: 90%;
-        height: 60%;
-    }
-    .brand-images:last-child>a{
-    
-        grid-column: 1 / span 3;
     }
 }
 
@@ -429,17 +327,13 @@ h1{
 {
 
     .nfts-examples{
-        display: flex;
         justify-content: space-between;
-        align-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         margin: auto;
     }
 
     .brand-images{
-        display: grid;
-        justify-items: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
@@ -464,19 +358,3 @@ h1{
     }
 }
 
-
-/*
- <div class="col-3">
-                <h1>Popular NFT Marketplaces</h1>
-                <a href="https://crypto.com/nft/" target="_blank"><p>Crypto.com</p></a>
-                <a href="https://opensea.io/" target="_blank"><p>OpenSea</p></a>
-                <a href="https://rarible.com/" target="_blank"><p>Rarible</p></a>
-                <a href="https://niftygateway.com/" target="_blank"><p>Nifty Gateway</p></a>
-                <a href="https://foundation.app/" target="_blank"><p>Foundation</p></a>
-                <a href="https://nbatopshot.com/" target="_blank"><p>NBA Topshot</p></a>
-                <a href="https://superrare.com" target="_blank"><p>SuperRare</p></a>
-                <a href="https://myth.market" target="_blank"><p>Myth Market</p></a>
-                <a href="https://marketplace.draftkings.com" target="_blank"><p>DraftKings Marketplace</p></a>
-                <a href="https://www.binance.com/en/nft/home" target="_blank"><p>Binance NFT</p></a>
-            </div>
-*/
