@@ -309,7 +309,7 @@ input[name=question]:checked + label + .response{
     margin: 0 0 20px 0
 }
 
-@media only screen and (min-width: 700px)
+@media only screen and (min-width: 640px)
 {
     .nfts-examples {
         justify-content: space-evenly;
@@ -326,7 +326,7 @@ input[name=question]:checked + label + .response{
     }
 }
 
-@media only screen and (min-width: 900px)
+@media only screen and (min-width: 1000px)
 {
 
     .nfts-examples{
